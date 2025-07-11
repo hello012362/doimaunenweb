@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Đổi màu nền</title>
+  <link rel="stylesheet" href="styl.css">
+</head>
+<body>
+  <h1>Thử đổi màu nền!</h1>
+
+  <label for="chonMau">Chọn màu:</label>
+  <input type="color" id="chonMau">
+
+  <button onclick="doiMauNen()">Đổi màu nền</button>
+
+  <script>
+    function doiMauNen() {
+      const mau = document.getElementById("chonMau").value;
+      document.body.style.backgroundColor = mau;
+    }
+  </script>
+</body>
+</html>
